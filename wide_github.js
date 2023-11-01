@@ -1,3 +1,6 @@
 setTimeout(function() {
-    document.querySelectorAll('div[data-host="https://notebooks.githubusercontent.com"]')[0].style.width = '100%'
+    var notebooks = document.querySelectorAll('div[data-host="https://notebooks.githubusercontent.com"]');
+    for (var i = 0; i < notebooks.length; i++) {
+        notebooks[i].style.width = '100%';
+    }
 }, 5000);
